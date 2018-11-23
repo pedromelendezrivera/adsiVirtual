@@ -1,23 +1,28 @@
 package modelo.vo;
+
 /**
  *
  * @author PMELENDEZ
  */
-public class UsuarioVo {
+public  class UsuarioVo {
+
+    
     private int id;
     private String usuario;
     private String password;
     private String nombre;
     private String email;
     private String last_session;
-    private int idTipo;
+    private String idTipo;
 
     public UsuarioVo() {
+        
     }
 
+    
     public UsuarioVo(String usuario, String password) {
-        this.usuario = usuario;
-        this.password = password;
+          this.usuario = usuario;
+          this.password = password;
     }
 
     public int getId() {
@@ -68,14 +73,12 @@ public class UsuarioVo {
         this.last_session = last_session;
     }
 
-    public int getIdTipo() {
+    public String getIdTipo() {
         return idTipo;
     }
 
-    public void setIdTipo(int idTipo) {
+    public void setIdTipo(String idTipo) {
         this.idTipo = idTipo;
     }
-    
-    
     
 }
