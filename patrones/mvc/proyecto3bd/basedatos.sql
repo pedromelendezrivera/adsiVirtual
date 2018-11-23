@@ -1,5 +1,4 @@
 
-
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `usuario` varchar(45) CHARACTER SET latin1 NOT NULL,
@@ -9,3 +8,8 @@ CREATE TABLE `usuarios` (
   `last_session` datetime DEFAULT '0000-00-00 00:00:00',
   `id_tipo` varchar(2) CHARACTER SET latin1 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `rol` (`id_tipo`);
+  
